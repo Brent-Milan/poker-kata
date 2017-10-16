@@ -41,7 +41,14 @@ public class CardFactoryTest {
 	@Test
 	public void shouldReturnACardObjectWithSuitSpade() {
 		String expected = "Spade";
-		Card card = underTest.createCard();
+		Card card = underTest.createCard("Spade");
+		assertEquals(expected, card.suit);
+	}
+	
+	@Test
+	public void shouldReturnACardObjectWithSuitClub() {
+		String expected = "Club";
+		Card card = underTest.createCard("Club");
 		assertEquals(expected, card.suit);
 	}
 

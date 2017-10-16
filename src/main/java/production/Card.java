@@ -2,5 +2,9 @@ package production;
 
 public class Card {
 
-	String suit = "Spade";
+	String suit;
+	
+	public Card(String suit) {
+		this.suit = suit;
+	}
 }
