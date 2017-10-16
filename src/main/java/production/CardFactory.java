@@ -6,4 +6,8 @@ public class CardFactory {
 	
 	String[] suits = { "Spade", "Club", "Heart", "Diamond" };
 
+	public Card createCard() {
+		return new Card();
+	}	
+
 }

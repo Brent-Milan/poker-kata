@@ -37,5 +37,12 @@ public class CardFactoryTest {
 		String[] expected = { "Spade", "Club", "Heart", "Diamond"};
 		assertArrayEquals(expected, underTest.suits);
 	}
+	
+	@Test
+	public void shouldReturnACardObjectWithSuitSpade() {
+		String expected = "Spade";
+		Card card = underTest.createCard();
+		assertEquals(expected, card.suit);
+	}
 
 }
