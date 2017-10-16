@@ -6,8 +6,8 @@ public class CardFactory {
 	
 	String[] suits = { "Spade", "Club", "Heart", "Diamond" };
 
-	public Card createCard(String suit) {
-		Card card = new Card(suit);
+	public Card createCard(String suit, int value) {
+		Card card = new Card(suit, value);
 		return card;
 	}	
 
