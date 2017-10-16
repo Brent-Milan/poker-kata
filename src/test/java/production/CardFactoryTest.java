@@ -25,5 +25,17 @@ public class CardFactoryTest {
 		int[] expected = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 		assertArrayEquals(expected, underTest.values);
 	}
+	
+	@Test 
+	public void suitArraySizeShouldEqual4() {
+		int expected = 4;
+		assertEquals(expected, underTest.suits.length);
+	}
+	
+	@Test
+	public void arrayShouldIncludeAllFourSuits() {
+		String[] expected = { "Spade", "Club", "Heart", "Diamond"};
+		assertArrayEquals(expected, underTest.suits);
+	}
 
 }
