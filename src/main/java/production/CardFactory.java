@@ -30,6 +30,11 @@ public class CardFactory {
 	}
 
 	public String convertToString(int number) {
+		if(number == 10) {
+			return "T";
+		} if(number == 11) {
+			return "J";
+		}
 		return "" + number;
 	}
 
