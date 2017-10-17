@@ -38,6 +38,8 @@ public class CardFactory {
 			return "Q";
 		} if(number == 13) {
 			return "K";
+		} if(number == 14) {
+			return "A";
 		}
 		return "" + number;
 	}
