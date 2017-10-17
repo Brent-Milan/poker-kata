@@ -7,7 +7,8 @@ public class CardFactory {
 	String[] suits = { "Spade", "Club", "Heart", "Diamond" };
 
 	public Card createCard(String suit, int value) {
-		Card card = new Card(suit, value);
+		String name = assignName(suit, value);
+		Card card = new Card(suit, value, name);
 		return card;
 	}
 
@@ -25,7 +26,6 @@ public class CardFactory {
 		} else if(suit.equalsIgnoreCase("Diamond")) {
 			return "D";
 		}
-		
 		return null;
 	}
 

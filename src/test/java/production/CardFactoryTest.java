@@ -101,5 +101,12 @@ public class CardFactoryTest {
 		String expected = "S2";
 		assertEquals(expected, underTest.assignName("Spade", 2));
 	}
+	
+	@Test
+	public void shouldAlsoReturnS2() {
+		String expected = "S2";
+		Card card = underTest.createCard("Spade", 2);
+		assertEquals(expected, card.name);
+	}
 
 }
