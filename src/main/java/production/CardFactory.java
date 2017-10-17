@@ -27,6 +27,16 @@ public class CardFactory {
 		}
 		
 		return null;
+	}
+
+	public String convertToString(int number) {
+		return "" + number;
+	}
+
+	public String assignName(String suit, int value) {
+		String shortened = abbreviateSuit(suit);
+		String converted = convertToString(value);
+		return shortened + converted;
 	}	
 
 }

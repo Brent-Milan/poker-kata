@@ -89,5 +89,17 @@ public class CardFactoryTest {
 		String expected = "D";
 		assertEquals(expected, underTest.abbreviateSuit("Diamond"));
 	}
+	
+	@Test
+	public void shouldConvert2ToString() {
+		String expected = "2";
+		assertEquals(expected, underTest.convertToString(2));
+	}
+	
+	@Test
+	public void shouldReturnS2() {
+		String expected = "S2";
+		assertEquals(expected, underTest.assignName("Spade", 2));
+	}
 
 }
