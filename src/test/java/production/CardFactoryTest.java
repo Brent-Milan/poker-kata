@@ -65,5 +65,12 @@ public class CardFactoryTest {
 		Card card = underTest.createCard("Spade", 2);
 		assertEquals(expected, card.value);
 	}
+	
+	@Test
+	public void shouldReturnStringOutputS() {
+		String expected = "S";
+		Card card = underTest.createCard("Spade", 2);
+		assertEquals(expected, underTest.assignName());
+	}
 
 }

@@ -9,6 +9,10 @@ public class CardFactory {
 	public Card createCard(String suit, int value) {
 		Card card = new Card(suit, value);
 		return card;
+	}
+
+	public String assignName() {
+		return "S";
 	}	
 
 }
