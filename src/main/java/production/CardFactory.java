@@ -11,15 +11,19 @@ public class CardFactory {
 		return card;
 	}
 
-	public String assignName(String suit) {
+	public String abbreviateSuit(String suit) {
 		if(suit == null) {
 			return null;
 		}
 		
 		if(suit.equalsIgnoreCase("Spade")) {
 			return "S";
-		} if(suit.equalsIgnoreCase("Club")) {
+		} else if(suit.equalsIgnoreCase("Club")) {
 			return "C";
+		} else if(suit.equalsIgnoreCase("Heart")) {
+			return "H";
+		} else if(suit.equalsIgnoreCase("Diamond")) {
+			return "D";
 		}
 		
 		return null;

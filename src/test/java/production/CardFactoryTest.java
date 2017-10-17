@@ -69,14 +69,25 @@ public class CardFactoryTest {
 	@Test
 	public void shouldReturnStringOutputS() {
 		String expected = "S";
-		assertEquals(expected, underTest.assignName("Spade"));
+		assertEquals(expected, underTest.abbreviateSuit("Spade"));
 	}
 	
 	@Test
 	public void shouldReturnStringOutputC() {
 		String expected = "C";
-		Card card = underTest.createCard("Club", 2);
-		assertEquals(expected, underTest.assignName("Club"));
+		assertEquals(expected, underTest.abbreviateSuit("Club"));
+	}
+	
+	@Test
+	public void shouldReturnStringOutputH() {
+		String expected = "H";
+		assertEquals(expected, underTest.abbreviateSuit("Heart"));
+	}
+	
+	@Test
+	public void shouldReturnStringOutputD() {
+		String expected = "D";
+		assertEquals(expected, underTest.abbreviateSuit("Diamond"));
 	}
 
 }
