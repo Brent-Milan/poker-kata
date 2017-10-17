@@ -11,8 +11,18 @@ public class CardFactory {
 		return card;
 	}
 
-	public String assignName() {
-		return "S";
+	public String assignName(String suit) {
+		if(suit == null) {
+			return null;
+		}
+		
+		if(suit.equalsIgnoreCase("Spade")) {
+			return "S";
+		} if(suit.equalsIgnoreCase("Club")) {
+			return "C";
+		}
+		
+		return null;
 	}	
 
 }
